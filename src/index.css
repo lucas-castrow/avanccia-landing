@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Compensa a navbar fixa ao navegar por âncoras */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-base text-ink font-sans antialiased;
+    /* Corpo com no mínimo 16px */
+    font-size: 16px;
+  }
+
+  /* Foco visível e acessível em toda a navegação por teclado */
+  :focus-visible {
+    outline: 2px solid #06b6d4;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Respeita prefers-reduced-motion: desliga animações e transições */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Eyebrow em Space Mono, uppercase, com espaçamento entre letras */
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-muted;
+  }
+
+  /* Texto com o acento em gradiente */
+  .text-accent-gradient {
+    @apply bg-accent bg-clip-text text-transparent;
+  }
+
+  /* Botão primário com o acento — único CTA de conversão */
+  .btn-primary {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl
+      bg-accent px-6 py-3 font-medium text-white shadow-lg shadow-accent-from/20
+      transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-accent-from/30;
+  }
+
+  /* Botão/link secundário, sem o acento */
+  .btn-secondary {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl
+      border border-white/10 px-6 py-3 font-medium text-ink
+      transition-colors duration-200 hover:border-white/25 hover:bg-white/5;
+  }
+
+  /* Cartão base com borda sutil */
+  .card {
+    @apply rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6
+      transition-colors duration-200;
+  }
+}

@@ -1,0 +1,7 @@
+<svg width="480" height="130" viewBox="0 0 480 130" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avanccia">
+  <g transform="translate(6,20) scale(0.75)">
+    <path d="M18 102 L60 18 L102 102" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"/>
+    <path d="M43 102 L60 68 L77 102" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"/>
+  </g>
+  <text x="118" y="82" font-family="'Space Grotesk','Michroma',ui-sans-serif,system-ui,sans-serif" font-size="54" font-weight="600" letter-spacing="6" fill="currentColor">AVANCCIA</text>
+</svg>
