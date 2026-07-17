@@ -2,14 +2,15 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Capabilities from './components/Capabilities'
 import Applications from './components/Applications'
-import Problem from './components/Problem'
+import WhileYouDecide from './components/WhileYouDecide'
 import Services from './components/Services'
 import HowItWorks from './components/HowItWorks'
 import Results from './components/Results'
 import About from './components/About'
 import FAQ from './components/FAQ'
-import FinalCTA from './components/FinalCTA'
+// import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
+import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
 
 /**
  * Landing page da Avanccia — consultoria de IA.
@@ -24,15 +25,16 @@ export default function App() {
         <Hero />
         <Capabilities />
         <Applications />
-        <Problem />
+        <WhileYouDecide />
         <Services />
         <HowItWorks />
         <Results />
         <About />
         <FAQ />
-        <FinalCTA />
+        {/* <FinalCTA /> */}
       </main>
       <Footer />
+      <WhatsAppFloatingButton />
     </>
   )
 }

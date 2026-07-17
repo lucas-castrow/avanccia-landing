@@ -5,6 +5,7 @@ import {
   Workflow,
   Bot,
   GraduationCap,
+  ShieldAlert,
   type LucideIcon,
 } from 'lucide-react'
 import SectionHeader from './SectionHeader'
@@ -62,6 +63,13 @@ const SERVICES: Service[] = [
     benefit:
       'Capacitamos sua equipe e desenvolvemos soluções de IA sob medida para os seus desafios.',
     span: 'lg:col-span-2',
+  },
+  {
+    icon: ShieldAlert,
+    title: 'Governança e segurança no uso de IA',
+    benefit:
+      'Sua equipe já usa IA: a pergunta é se está vazando dado sigiloso sem ninguém saber. A gente cria a política e treina o time para usar com segurança.',
+    span: 'sm:col-span-2 lg:col-span-3',
   },
 ]
 
